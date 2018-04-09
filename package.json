@@ -1,0 +1,33 @@
+{
+  "name": "Curriculo - Velasco",
+  "version": "1.0.0",
+  "description": "Um currículo diferente e elegante.",
+  "main": "index.html",
+  "scripts": {
+    "start": "js/custom.min.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrenoVelasco/Curriculo"
+  },
+  "keywords": [
+    "curriculo",
+    "html5",
+    "css",
+    "javascript",
+    "bootstrap",
+    "ruby",
+    "codemirror",
+  ],
+  "author": "Breno Velasco",
+  "contributors": [
+    "Leonardo Momente"
+  ],
+  "license": "MIT"
+}
