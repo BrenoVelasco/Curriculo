@@ -1,0 +1,221 @@
+html {
+  scroll-behavior: smooth; /* Serve para que a rolagem do site fique mais suave */
+}
+
+body {
+  padding-top: 54px; /* Mantém espaço para a navbar */
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+
+  #divisorCitacao {
+    border-right: 1px solid grey;
+  }
+}
+
+/* Esta classe serve para dar um zoom na imagem durante um hover */
+.hoverzoom {
+  overflow: hidden;
+}
+
+.hoverzoom > img {
+	border-radius: 2px;
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+
+.hoverzoom:hover > img {
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+
+a {
+  color: rgb(45, 108, 182);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #0A3764;
+}
+
+.icones {
+  font-size: 24px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.icones:hover {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+#header {
+  position: relative;
+}
+
+/* .carousel-inner {
+  overflow: visible;
+} */
+
+.imagensHeader {
+  height: 300px;
+  object-fit: cover;
+  width: calc(100% - 0px);
+}
+
+#fotoVelasco {
+  position: absolute;
+  top: 220px;
+  border: 3px white solid;
+  z-index: 99;
+}
+
+#codigo {
+  background-color: #263238;
+}
+
+@media (max-width: 992px) {
+  .h1 {
+    font-size: 48px;
+  }
+
+  .modal-body {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .scroll-tree {
+    width: 580px;
+  }
+
+  .scroll-tree-oficina {
+    width: 545px;
+  }
+
+  .modal img {
+    height: 400px;
+    width: auto;
+  }
+}
+
+#fotoOttech {
+  width: 85%;
+  height: auto;
+}
+
+.tituloCard {
+  min-height: 90px;
+}
+
+.card, .shadow-border {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagem-formacao {
+  padding-right:0;
+  padding-left:0;
+  margin-right:0;
+  margin-left:0;
+}
+
+.containerFormacao {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay para o texto aparecer sobre a imagem apenas durante um hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 992px){
+  .overlay {
+    opacity: 0.7;
+  }
+}
+
+.containerFormacao:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: black;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  .text {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+.imagem-modal {
+  height: auto;
+  width: 765px;
+}
+
+blockquote {
+  height: 145px;
+}
+
+@media (max-width: 450px) {
+  .copyright {
+    padding-top: 100px;
+  }
+
+  .imagensHeader {
+    height: 200px;
+  }
+
+  #fotoVelasco {
+    width: 40%;
+    top: 150px;
+    border: 2px solid white;
+  }
+
+  .h1 {
+    font-size: 36px;
+    padding-top: 30px;
+  }
+
+  #tituloOttech {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
