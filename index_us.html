@@ -122,11 +122,13 @@
         "Street" => "Rua Tucano, 393",
         "Neighborhood" => "Cafezal VI",
         "City" => "Itupeva - SP",
-        "Country" => "Brasil",
+        "Country" => "Brazil",
       }
       @single = true
       @extras = {}
     end
+    
+    attr_accessor :name, :age, :contacts, :languages, :address, :single, :extras
 
     def technologies
       technologies = [
@@ -141,8 +143,6 @@
         "Office",
         "Sage ERP X3",
       ]
-
-      puts "I know and already had considerable experience with #{technologies.join(', ')}."
     end
 
     def setExtras(id, value)
@@ -153,6 +153,8 @@
   velasco = Velasco.new
   velasco.setExtras("hasNotebook", true)
   velasco.setExtras("hasCar", true)
+
+  puts "I know and already had considerable experience with #{velasco.technologies.join(', ')}."
           </textarea>
         </div>
       </div>

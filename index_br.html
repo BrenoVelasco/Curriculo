@@ -104,14 +104,14 @@
       <div class="row justify-content-center">
         <div class="pt-4 col-lg-8">
           <textarea class="codemirror-textarea">
-  # Eu, em linhas de código
+  # Velasco em linhas de código
   class Velasco
     def initialize
       @nome = "Breno Velasco"
       @idade = 21 # 17/09/1997
       @contatos = {
         "E-mail" => "brenovelasco97@outlook.com",
-        "Celular" => "+55 11 984-547-405",
+        "Telefone" => "+55 11 984-547-405",
       }
       @idiomas = {
         "Inglês" => "Avançado",
@@ -127,6 +127,8 @@
       @solteiro = true
       @extras = {}
     end
+    
+    attr_accessor :nome, :idade, :contatos, :idiomas, :endereco, :solteiro, :extras
 
     def tecnologias
       tecnologias = [
@@ -141,8 +143,6 @@
         "Pacote Office",
         "Sage ERP X3",
       ]
-
-      puts "Conheço e já tive experiência considerável com #{tecnologias.join(', ')}."
     end
 
     def setExtras(id, value)
@@ -153,6 +153,8 @@
   velasco = Velasco.new
   velasco.setExtras("temNotebook", true)
   velasco.setExtras("temCarro", true)
+
+  puts "Eu conheço e já tive experiência considerável com #{velasco.tecnologias.join(', ')}."
           </textarea>
         </div>
       </div>
