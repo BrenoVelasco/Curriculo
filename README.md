@@ -8,7 +8,7 @@ A pasta modules contém as tecnologias usadas nesse projeto: bootstrap, codemirr
 
 Obrigado! =)
 
-- English
+- English:
 Welcome to my curriculum!
 To view it, just open index.html in any available browser, such as Google Chrome or Mozilla Firefox.
 CSS and Javascript are found in the css and js folders, respectively, and each one has its minified version.
