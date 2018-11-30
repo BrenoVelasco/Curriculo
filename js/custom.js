@@ -1,4 +1,4 @@
-// Inicializa uma instância de Code Mirror para o visual de editor no site
+// Initialize a Code Mirror's instance
 $(document).ready(function(){
   var code = $(".codemirror-textarea")[0];
   var editor = CodeMirror.fromTextArea(code, {
@@ -10,30 +10,44 @@ $(document).ready(function(){
   });
 });
 
-// Muda o tempo de transição do Carousel
+// Removes anchor hashes from url
+$(document).on('click', function(evt) {
+  if (evt.target.hash === '#about' || evt.target.hash === '#experience' || evt.target.hash === '#courses' || evt.target.hash === '#academic') {
+    console.log(evt.target.hash)
+    $('html, body').animate({ scrollTop: $( evt.target.hash ).offset().top }, 100);
+    return false;
+  } 
+});
+
+// Scroll to top when home logo is clicked
+$("#home").click(function(){
+  $(window).scrollTop(0);
+});
+
+// Changes Carousel's transition duration
 $('.carousel').carousel({
    interval: 4000
   });
 
-// Chama o método popover do Bootstrap
+// Calls Bootstrap's popover method
 $(function(){
   $('[data-toggle="popover"]').popover()
 })
 
-// Faz o controle de list-items ativas da navbar após ação de clique
+// Controls active navbar's list-items after click action
 $('li > a').click(function() {
     $('li').removeClass();
     $(this).parent().addClass('active');
 });
 
-// Fecha a navbar ao clique de algum list-item
+// Closes navbar after list-item click
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
 // =)
-$('#fotoVelasco').on('click', function(){
-  var messages = ['Hello, World!', 'Contrata eu, por favor =´(', 'I <3 Ruby', '"Building the future and keeping the past alive are one and the same thing" - Solid Snake.', 'Instrumentalizando no violão e no violino desde... 2011, eu acho.', 'Breaking Bad só perde para The Sopranos.'];
+$('#velascoPhoto').on('click', function(){
+  var messages = ['Hello, World!', 'Contrata eu, por favor =´(', 'I <3 Ruby', '"Building the future and keeping the past alive are one and the same thing" - Solid Snake.', 'Instrumentalizando no violão e no violino desde 2011.', 'Breaking Bad só perde para The Sopranos.'];
   var randomMessage = Math.round(Math.random()*messages.length-1);
   console.log(messages[randomMessage]);
 });

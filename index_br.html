@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Breno Velasco">
+    <meta name="description" content="Um currículo diferente e elegante.">
+    <meta name="robots" content="index, nofollow">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="modules/bootstrap/compiler/bootstrap.css">
+    <!-- Codemirror -->
+    <link rel="stylesheet" href="modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="modules/codemirror/theme/material.css">
+    <!-- Custom Style -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon/programmer.png">
+
+    <title>Velasco</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <!-- Popover -->
+        <a tabindex="0" class="navbar-brand pointer" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Desenvolvedor Padawan" data-content="Programador, violonista e violinista amador, entusiasta das práticas físicas e do estudo de idiomas.">Breno Velasco</a>
+        <!-- Responsive Navigation Bar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!-- Navbar - left items -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a title="Facebook" target="_blank" data-target=".navbar-collapse.show" href="https://www.facebook.com/profile.php?id=100009281545201"><i class="fab fa-facebook icons"></i></a>
+              &nbsp
+              <a title="Github" target="_blank" data-target=".navbar-collapse.show" href="https://github.com/BrenoVelasco"><i class="fab fa-github icons"></i></a>
+              &nbsp
+              <a title="LinkedIn" target="_blank" data-target=".navbar-collapse.show" href="https://www.linkedin.com/in/breno-velasco-a653ab127/"><i class="fab fa-linkedin icons"></i></a>
+            </li>
+          </ul>
+          <!-- Navbar - right items -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link pointer" data-target=".navbar-collapse.show" id="home"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target=".navbar-collapse.show" href="#about">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target=".navbar-collapse.show" href="#experience">Experiência</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target=".navbar-collapse.show" href="#courses">Realizações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target=".navbar-collapse.show" href="#academic">Formação</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header, using Carousel -->
+    <header id="header">
+      <div id="carouselHeader" class="carousel slide" data-ride="carousel" id="carouselSlide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/header/violin.jpg" class="img-fluid d-block headerImage" alt="Uma foto de um violino sobre uma partitura">
+          </div>
+          <div class="carousel-item">
+            <img src="img/header/linux.jpg" class="img-fluid d-block headerImage" alt="Terminal com comandos UNIX">
+          </div>
+          <div class="carousel-item">
+            <img src="img/header/guitar.jpg" class="img-fluid d-block headerImage" alt="Foto de alguém tocando violão">
+          </div>
+          <div class="carousel-item">
+            <img src="img/header/programming.jpg" class="img-fluid d-block headerImage" alt="Linhas de código C">
+          </div>
+        </div>
+
+        <a href="#carouselHeader" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="sr-only">Anterior</span>
+        </a>
+
+        <a href="#carouselHeader" class="carousel-control-next" role="button" data-slide="next">
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Header picture -->
+    <div class="row justify-content-center">
+      <img class="img-fluid d-block mx-auto" src="img/header/velasco.jpg" alt="Foto do criador do site, Breno Velasco" id="velascoPhoto">
+    </div>
+
+    <!-- Codemirror -->
+    <div class="pt-5 container-fluid anchor" id="about">
+      <div class="row justify-content-center">
+        <div class="pt-4 col-lg-8">
+          <textarea class="codemirror-textarea">
+  # Eu, em linhas de código
+  class Velasco
+    def initialize
+      @nome = "Breno Velasco"
+      @idade = 21 # 17/09/1997
+      @contatos = {
+        "E-mail" => "brenovelasco97@outlook.com",
+        "Celular" => "+55 11 984-547-405",
+      }
+      @idiomas = {
+        "Inglês" => "Avançado",
+        "Espanhol" => "Intermediário",
+        "Francês" => "Básico",
+      }
+      @endereco = {
+        "Logradouro" => "Rua Tucano, 393",
+        "Bairro" => "Cafezal VI",
+        "Cidade" => "Itupeva - SP",
+        "País" => "Brasil",
+      }
+      @solteiro = true
+      @extras = {}
+    end
+
+    def tecnologias
+      tecnologias = [
+        "React - Redux", 
+        "Node.js", 
+        "Ruby on Rails",
+        "Visual Studio C#",
+        "Java",
+        "SQL Server",
+        "HTML5/CSS3/Javascript",
+        "Bootstrap",
+        "Pacote Office",
+        "Sage ERP X3",
+      ]
+
+      puts "Conheço e já tive experiência considerável com #{tecnologias.join(', ')}."
+    end
+
+    def setExtras(id, value)
+      @extras[id] = value
+    end
+  end
+
+  velasco = Velasco.new
+  velasco.setExtras("temNotebook", true)
+  velasco.setExtras("temCarro", true)
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional experiences, using Jumbotron -->
+    <div class="jumbotron jumbotron-fluid" id="experience">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-4 h1 no-margins">Experiência Profissional</h1>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-lg-5">
+            <a target="_blank" href="http://www.ottech.com.br/">
+              <div class="full-width">
+                <div class="hoverzoom">
+                  <img title="Prédio Maxime, onde se localiza o escritório da Ottech" class="d-block mx-auto shadow-border" src="img/professional-exp/ottech.png" id="ottechPhoto" alt="Foto do prédio Maxime, onde fica localizado o escritório da Ottech">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-7 text-left pt-4">
+            <h4 id="tituloOttech">Estagiário na Ottech - Serviços e Tecnologia</h4>
+            <p class="text-justify">Empresa de Tecnologia da Informação que implementa e presta serviços da plataforma Sage ERP X3, um software para automação de processos e redução de custos.</p>
+            <br>
+            <p><i class="fas fa-check"></i> Realização de manutenções e criação de tabelas, janelas e objetos do sistema;</p>
+            <p><i class="fas fa-check"></i> Configuração do Web Service de protocolo SOAP;</p>
+            <p><i class="fas fa-check"></i> Suporte aos consultores na resolução de chamados de clientes.</p>
+            <br>
+            <p><i class="far fa-calendar-alt"></i> De Junho/2017 a Dezembro/2017</p>
+            <a target="_blank" href="https://www.google.com/maps/place/Maxime+Office+Tower/@-23.2026096,-46.8945157,17z/data=!3m1!4b1!4m5!3m4!1s0x94cf26bb58d91a7b:0xfe2034af87de5cc4!8m2!3d-23.2026096!4d-46.892327">
+              <p><i class="far fa-compass"></i> Av. 9 de Julho, 3575 - Anhangabaú, Jundiaí - SP</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-lg-7 assinaai-carousel-mobile">
+          <div id="carousel-assinaai-mobile" class="carousel slide assinaai-carousel" data-ride="carousel">
+            <div class="carousel-inner assinaai-carousel-inner">
+              <div class="carousel-item active">
+                <a target="_blank" href="https://assina.ai">
+                  <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-mobile-1.png" alt="Página principal">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai/green">
+                  <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-mobile-2.png" alt="Produto disponível a escolha">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai/green">
+                  <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-mobile-3.png" alt="Página de frequência e barra de status">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai">
+                  <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-mobile-4.png" alt="Resumo de toda a assinatura">
+                </a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-assinaai-mobile" role="button" data-slide="prev">
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-assinaai-mobile" role="button" data-slide="next">
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-left pt-4">
+          <h4>Desenvolvedor Front-End Júnior do site Assina.ai</h4>
+          <p class="text-justify">Serviço de automação de assinaturas e compras para comércios e empresas.</p>
+          <br>
+          <p><i class="fas fa-check"></i> Visual de todo o site usando React - Redux, Bootstrap, Sass etc, usando wireframes feitos por designer como base;</p>
+          <p><i class="fas fa-check"></i> Criação de métodos e migrações e manutenção server-side com Node.js e MySQL;</p>
+          <p><i class="fas fa-check"></i> Controle de versão com Git e Bitbucket usando branches e pull requests;</p>
+          <p><i class="fas fa-check"></i> Suporte às dúvidas dos desenvolvedores sobre questões do Front-End.</p>
+          <br>
+          <p><i class="far fa-calendar-alt"></i> De Junho/2018 em diante</p>
+            <p><i class="far fa-compass"></i> Home-office</p>
+        </div>
+        <div class="col-lg-7 assinaai-carousel-desktop">
+          <div id="carousel-assinaai-desktop" class="carousel slide assinaai-carousel" data-ride="carousel">
+            <div class="carousel-inner assinaai-carousel-inner">
+              <div class="carousel-item active">
+                <a target="_blank" href="https://assina.ai">
+                  <div class="hoverzoom-less">
+                    <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-home.png" alt="Página inicial do Assina.ai">
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai/green">
+                  <div class="hoverzoom-less">
+                    <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-offerings.png" alt="Ofertas disponíveis da empresa Green no Assina.ai">
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai">
+                  <div class="hoverzoom-less">
+                    <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-business.png" alt="Página do administrador da empresa cadastrada Green">
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a target="_blank" href="https://assina.ai">
+                  <div class="hoverzoom-less">
+                    <img class="d-block w-100" src="img/professional-exp/assinaai/assinaai-subscription.png" alt="Assinatura e seus detalhes">
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#carousel-assinaai-desktop" role="button" data-slide="prev">
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-assinaai-desktop" role="button" data-slide="next">
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses and achievements, using Cards -->
+    <a id="courses"><div class="container pt-5"></a>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="display-4 h1 no-margins">Cursos e Realizações</h1>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row justify-content-sm-center pt-5">
+        <!-- Card #1 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a href="#" data-toggle="modal" data-target="#certificationModalAndroid">
+              <div class="hoverzoom">
+                <img src="img/courses/android.jpg" alt="Imagem do Bugdroid, mascote do Android" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center pt-3">Introdução à programação para Android</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">Uso do Android Studio e Java para construção de aplicativo simples.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Fatec Jundiaí</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 3 horas de duração | 2016</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Card #2 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a target="_blank" href="https://www.facebook.com/photo.php?fbid=1506889296052597&set=rpd.100009281545201&type=3&theater">
+              <div class="hoverzoom">
+                <img src="img/courses/programming-immersion.jpg" alt="Foto minha com o professor Cláudio Luis Oliveira, que me entregou o livro de sua autoria como recompensa por vencer o desafio" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center">Vencedor do desafio "Imersão em Programação: C#"</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">Criação de calculadora usando orientação a objetos em Visual Studio C#.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Fatec Jundiaí</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 1 mês de desafio | 2017</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Card #3 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a href="#" data-toggle="modal" data-target="#certificationModalViceri">
+              <div class="hoverzoom">
+                <img src="img/courses/viceri.jpg" alt="Logotipo do Grupo Viceri" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center pt-3">Formação de Talentos - Grupo Viceri</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">HTML5, CSS3, Bootstrap, Visual Studio C#, JQuery e Metodologias Ágeis.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Fatec Jundiaí e Grupo Viceri</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 30 horas de duração/ano | 2017 e 2018</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row pt-2">
+        <div class="col-lg-6">
+          <a target="_blank" href="https://www.facebook.com/operariodamesse01/">
+            <div class="hoverzoom">
+              <img class="volunteerWork" src="img/courses/volunteer-work.jpeg"/>
+            </div>
+          </a>
+        </div> 
+        <div class="col-lg-6">
+          <h4 class="pt-3">Professor Voluntário de Informática Básica</h4>
+          <p class="text-justify">Ensino de informática básica no Centro Pastoral Social Padre José Vailati para crianças, entre 7 e 14 anos, de famílias desestruturadas.</p>
+          <br>
+          <p><i class="fas fa-check"></i> Ensino do uso básico de computador, de programas como Word e PowerPoint e uso da internet, além de outras atividades que estimulam a criatividade e passam valores às crianças;</p>
+          <br>
+          <p><i class="far fa-calendar-alt"></i> De Junho/2018 em diante</p>
+          <a target="_blank" href="https://www.google.com/maps/place/R.+Reinaldo+Orsi,+10+-+Parque+Brasilia,+Jundia%C3%AD+-+SP,+13211-133/@-23.1802427,-46.9146252,19z/data=!3m1!4b1!4m5!3m4!1s0x94cf25ce6e734dc5:0xe7c50de41d9f3a52!8m2!3d-23.1802439!4d-46.914078">
+            <p><i class="far fa-compass"></i> R. Reinaldo Orsi, 10 - Parque Brasília, Jundiaí - SP</p>
+          </a>
+        </div>
+      </div>
+      <hr/>
+
+      <div class="row justify-content-sm-center pt-3">
+        <!-- Card #4 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a href="#" data-toggle="modal" data-target="#certificationModalOficina">
+              <div class="hoverzoom">
+                <img src="img/courses/workshop.jpg" alt="Logotipo da Oficina do Futuro" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center pt-3">Arquitetura Mainframe: Conceitos e Fundamentos</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">Treinamento de 1 mês e meio sobre fundamentos e comandos de Mainframe.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Oficina do Futuro, remoto on-line</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 80 horas de duração | 2016</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Card #5 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a target="_blank" href="https://www.facebook.com/photo.php?fbid=1503450836396443&set=o.110744676004446&type=3&theater">
+              <div class="hoverzoom">
+                <img src="img/courses/interfatecs.jpg" alt="Logotipo do Interfatecs" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center pt-3">Participação na 6ª Edição da Maratona Interfatecs</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">Maratona de programação em Java resolvendo exercícios de lógica.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Fatec Jundiaí</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 5 horas de duração | 2017</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Card #6 -->
+        <div class="col-md-4 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-5">
+            <a target="_blank" href="http://algorithm.wiki/pt/app/">
+              <div class="hoverzoom">
+                <img src="img/courses/algorithms.jpg" alt="Logotipo do Algoritmos: Explicados e Animados" class="card-img-top">
+              </div>
+            </a>
+            <div class="card-body">
+              <div class="cardTitle">
+                <h4 class="card-title text-center pt-3">Tradução do aplicativo Algoritmos</h4>
+              </div>
+              <hr>
+              <div class="card-body-subtitle">
+                <h6 class="card-subtitle mb-2 text-muted">Tradução voluntária do inglês para o português do app e site de Moriteru Ishida.</h6>
+              </div>
+              <hr>
+              <h6><i class="fas fa-map-marker-alt"></i> Remoto para Moriteru Ishida (criador)</h6>
+              <hr>
+              <h6><i class="far fa-clock"></i> 2 meses de tradução | 2017</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="row">
+        <div class="col-lg-7 automab-carousel-mobile mb-3">
+          <div id="carousel-automab-mobile" class="carousel slide automab-carousel" data-ride="carousel">
+            <div class="carousel-inner assinaai-carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/courses/automab/automab-mobile1.png" alt="Página inicial do Automab mobile">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/courses/automab/automab-mobile2.png" alt="Barra de navegação do Automab mobile">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/courses/automab/automab-mobile3.png" alt="SVG do carro do Automab mobile">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/courses/automab/automab-mobile4.png" alt="Formulário do Automab mobile">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-automab-mobile" role="button" data-slide="prev">
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-automab-mobile" role="button" data-slide="next">
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <h4 class="pt-3">Desenvolvedor Full-Stack do sistema AutoMAB</h4>
+          <p class="text-justify">Trabalho de conclusão do curso de Análise e Desenvolvimento de Sistemas da Fatec Jundiaí. AutoMAB é um sistema gerencial de oficina mecânica de pequenos e médios portes.</p>
+          <br>
+          <p><i class="fas fa-check"></i> Criação de migrações e métodos com Ruby on Rails e visual do sistema Web usando Vue.js, Bootstrap e Sass;</p>
+          <p><i class="fas fa-check"></i> Feito em parceria com <a target="_blank" href="http://leomomente.herokuapp.com/">Leonardo Momente</a>.</p>
+          <br>
+          <p><i class="far fa-calendar-alt"></i> De Junho/2018 em diante</p>
+        </div>
+
+        <div class="col-lg-7 automab-carousel-desktop">
+          <div id="carousel-automab-desktop" class="carousel slide automab-carousel alignMiddle" data-ride="carousel">
+            <div class="carousel-inner assinaai-carousel-inner">
+              <div class="carousel-item active">
+                <div class="hoverzoom-less">
+                  <img class="d-block w-100" src="img/courses/automab/automab1.png" alt="Página inicial do Automab">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hoverzoom-less">
+                  <img class="d-block w-100" src="img/courses/automab/automab2.png" alt="SVG do carro do Automab">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hoverzoom-less">
+                  <img class="d-block w-100" src="img/courses/automab/automab3.png" alt="SVG com parte selecionada do carro do Automab">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hoverzoom-less">
+                  <img class="d-block w-100" src="img/courses/automab/automab4.png" alt="Modal de login do Automab">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hoverzoom-less">
+                  <img class="d-block w-100" src="img/courses/automab/automab5.png" alt="Formulário do Automab">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-automab-desktop" role="button" data-slide="prev">
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-automab-desktop" role="button" data-slide="next">
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Academic Record -->
+    <a id="academic"><div class="container-fluid"></a>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-4 h1 no-margins">Formação Acadêmica</h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-lg-6 academicImage">
+          <img class="img-fluid image" src="img/academic/trevo-school.jpg" alt="Foto da fachada do Colégio Trevo, em Itupeva">
+          <a target="_blank" href="http://www.colegiotrevo.com.br/">
+            <div class="overlay">
+              <div class="text">Sistema Positivo de Ensino
+                <br>Colégio Trevo - Itupeva/SP<br>
+                <br>Ensino Médio - Concluído em 2014</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6 academicImage">
+          <img class="img-fluid image" src="img/academic/fatec.jpg" alt="Foto dos prédios administrativos da Fatec Jundiaí">
+          <a target="_blank" href="http://www.fatecjd.edu.br/portal/">
+            <div class="overlay">
+              <div class="text">Faculdade de Tecnologia de Jundiaí
+                <br>
+                <br>Análise e Desenvolvimento de Sistemas - Conclusão em 2018
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-8" id="quoteDivider">
+            <blockquote class="blockquote text-left">
+              <p class="mb-0 text-light small">"Mas eu digo, não em sonhos, mas na consciência da luz do meio-dia, que o vento não fala mais docemente aos carvalhos gigantes do que à menor das folhas de grama;</p>
+              <p class="mb-0 text-light small">E só é grande aquele que transforma a voz do vento em uma canção [...]"</p>
+              <br>
+              <footer class="blockquote-footer text-light pb-5">Khalil Gibran <cite title="Source Title">O Profeta</cite></footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4 pt-5">
+            <p class="m-0 text-center text-white copyright">&copy; 2018 Breno Velasco</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Android Programming certification modal -->
+    <div class="modal fade" id="certificationModalAndroid" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="scroll-tree">
+              <img class="imagem-modal" src="img/modal/certification-android.jpg" alt="Certificado do curso de Programação em Android">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Viceri's Talent Formation course certification modal -->
+    <div class="modal fade" id="certificationModalViceri" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="scroll-tree">
+              <img class="imagem-modal" src="img/modal/certification-viceri.png" alt="Certificado do curso de Formação de Talentos da Viceri">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workshop of the Future's Mainframe Architecture course certification modal -->
+    <div class="modal fade" id="certificationModalOficina" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="scroll-tree-oficina">
+              <img class="imagem-modal" src="img/modal/certification-workshop.jpg" alt="Certificado do curso de Arquitetura Mainframe da Oficina do Futuro">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="modules/jquery/dist/jquery.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src="modules/popper.js/dist/umd/popper.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Codemirror -->
+    <script type="text/javascript" src="modules/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="modules/codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="modules/codemirror/mode/ruby/ruby.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  </body>
+</html>
